@@ -1,0 +1,6 @@
+app:
+  build: .
+  working_dir: /app
+  command: bundle exec ruby main.rb
+  ports:
+   - "3002:3002"

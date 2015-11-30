@@ -22,6 +22,8 @@ end
 
 get %r{.*} do
   tell_secrets(request)
+  content_type :json
+  File.read('fixtures/clean_service.json')
 end
 
 post %r{.*} do

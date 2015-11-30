@@ -12,5 +12,5 @@ RUN gem install bundler
 COPY . /app
 WORKDIR app
 RUN bundler install -j4
-CMD bundle exec ruby main.rb
+CMD bundle exec ruby em-proxy.rb
 
